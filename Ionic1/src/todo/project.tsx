@@ -11,10 +11,7 @@ export const Item: React.FC<ItemProps> = ({id, description, deadline, finished, 
 
     const history = useHistory();
     const handleNavigation=() =>{
-        const details={
-            id:id
-        }
-        history.push(`item/${id}`,{details});
+        history.push(`item/${id}`);
     }
     return(
         <IonItem className="project" onClick={handleNavigation} >

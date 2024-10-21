@@ -118,7 +118,7 @@ export const useItems: () => ItemState = () => {
     const [items,setItems] = useState<ItemProps[]>();
     const [fetchingError,setFetchingError] = useState<Error>();
 
-// useEffect(getItemsEffect,[]);
+useEffect(getItemsEffect,[]);
     useEffect(() => {
         const intervalId = setInterval(()=>{
              getItemsEffect();
